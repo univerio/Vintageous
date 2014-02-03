@@ -114,7 +114,7 @@ class Registers(object):
         # Special registers and invalid registers won't be set.
         if (not (name.isalpha() or name.isdigit() or
                  name.isupper() or name == REG_UNNAMED or
-                 name == REG_SYS_CLIPBOARD_1 or
+                 name in REG_SYS_CLIPBOARD_ALL or
                  name == REG_EXPRESSION or
                  name == REG_SMALL_DELETE)):
                     # Vim fails silently.
